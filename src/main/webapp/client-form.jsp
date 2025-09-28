@@ -18,16 +18,30 @@
     }
 %>
 <html>
-<head><title>Formulário Cliente</title></head>
+<head>
+    <title>Formulário Cliente</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-<h2>Cliente</h2>
-<form method="post" action="<%= action %>">
+<div class="card">
+    <h2>Cadastre um Novo Cliente</h2>
+	<form method="post" action="<%= action %>">
     <input type="hidden" name="id" value="<%= client.getId() %>"/>
-    Nome: <input type="text" name="nome" value="<%= client.getNome() %>"/><br/>
-    Email: <input type="text" name="email" value="<%= client.getEmail() %>"/><br/>
-    Telefone: <input type="text" name="telefone" value="<%= client.getTelefone() %>"/><br/>
-    <input type="submit" value="Salvar"/>
+    
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" value="<%= client.getNome() != null ? client.getNome() : "" %>" placeholder="Digite o nome"/><br/>
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"  value="<%= client.getEmail() != null ? client.getEmail() : "" %>" placeholder="Digite o email"/><br/>
+    
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" name="telefone" value="<%= client.getTelefone() != null ? client.getTelefone() : "" %>" placeholder="Digite o telefone"/><br/>
+    
+    <input type="submit" value="Salvar" class="btn"/>
+    <a href="index.jsp" class="btn">Voltar</a>
 </form>
-<a href="clients">Voltar</a>
+
+   
+</div>
 </body>
 </html>
