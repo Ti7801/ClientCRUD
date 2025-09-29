@@ -7,9 +7,9 @@ import java.util.List;
 
 public class ClientDAO {
 
-    private final String url = "jdbc:postgresql://localhost:5432/ClientCRUD";
+    private final String url = "jdbc:postgresql://localhost:5433/ClientCRUD";
     private final String user = "postgres";
-    private final String password = "123";
+    private final String password = "postgres";
 
     public ClientDAO() {
         try {

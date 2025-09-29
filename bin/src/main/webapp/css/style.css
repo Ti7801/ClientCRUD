@@ -1,0 +1,118 @@
+/* Corpo da página centralizado */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* cor clara do fundo */
+    font-family: Arial, sans-serif;
+}
+
+/* Card principal */
+.card {
+    background-color: #fff;  /* branco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* sombra bonita */
+    width: 800px; /* largura maior */
+    text-align: left;
+}
+
+/* Card principal */
+.card-index {
+    background-color: #fff;  /* branco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* sombra bonita */
+    width: 340px; /* largura maior */
+    text-align: left;
+}
+
+
+/* Título do card */
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Labels acima dos inputs */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Inputs maiores e ocupando largura do card */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #4CAF50; /* verde bonito */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Links de ação na tabela */
+a.action-btn {
+    padding: 5px 10px;
+    background-color: #2196F3; /* azul */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+a.action-btn.delete {
+    background-color: #f44336; /* vermelho */
+}
+
+a.action-btn:hover {
+    opacity: 0.8;
+}
+
+/* Tabela estilizada */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda; use center ou space-between se quiser outro alinhamento */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 20px;
+}
+
+.form-buttons .btn {
+    padding: 10px 25px;
+}

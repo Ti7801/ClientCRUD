@@ -15,21 +15,6 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.27</version>
         </dependency>
-
-        <!-- API de Servlets (Tomcat 8 usa Servlet 3.1) -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- JSTL para páginas JSP -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
     </dependencies>
 
     <build>
